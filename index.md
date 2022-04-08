@@ -1,5 +1,5 @@
-# Hello world
-## Hello world
+# Lab Report 1
+## Mengyuan Zhang
 
 This is *Hello world!!!!!!* 
 
