@@ -1,5 +1,4 @@
 # Lab Report 1
-Mengyuan Zhang
 
 * Installing VScode
 
@@ -12,7 +11,7 @@ Mengyuan Zhang
 
 * Remotely Connecting
 
-    We need to open the terminal in VScode, then command **ssh cs15lsp22(the letters in your course-specific account)@ieng6.ucsd.edu**. The first time you log in will ask your “Are you sure you want to continue connecting”, you should choose yes. Then you need to put in your password. If you are successfully logged in, your terminal will look like the following picture.
+    We need to open the terminal in VScode, then command `ssh cs15lsp22(the letters in your course-specific account)@ieng6.ucsd.edu`. The first time you log in will ask your “Are you sure you want to continue connecting”, you should choose yes. Then you need to put in your password. If you are successfully logged in, your terminal will look like the following picture.
 
     ![image](connect.png)
 
