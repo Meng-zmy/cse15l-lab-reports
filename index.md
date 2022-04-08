@@ -6,7 +6,7 @@
 
 [Hello](https://meng-zmy.github.io/cse15l-lab-reports/)
 
-![Hello](https://images.app.goo.gl/51iba48KurDqkL8B7)
+![Hello](https://www.elegantthemes.com/blog/wp-content/uploads/2020/08/hello-world.png)
 
 * hhh
 * kkk
