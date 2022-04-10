@@ -1,7 +1,6 @@
 # Lab Report 1
-```
-This lab will help you to access the remote server.
-```
+
+**This lab will help you to access the remote server.**
 
 ## 1. Installing VScode
 
