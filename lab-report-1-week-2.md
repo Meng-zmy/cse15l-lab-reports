@@ -36,6 +36,7 @@ The first time you log in will ask your “Are you sure you want to continue con
 *I just try some of the commands, you can try more. Here is [chect sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/)*
 
 ## 4. Moving Files with `scp`
+
 Now we want to copy the file from your computer to the remote computer.
 
 You can create a `Hello.java` in your computer:
@@ -47,12 +48,15 @@ class Hello {
 }
 ```
 Then in the terminal from the directory where you made this file, run this command `scp Hello.java cs15lsp22(the letters in your course-specific account)@ieng6.ucsd.edu:~/`
+
 ![image](scp1.png)
+
 After that, relog into your ieng6 with ssh again. Using `ls` command, you can see there is `Hello.java` appear.
+
 ![image](scp2.png)
 
-
 ## 5. Setting an SSH Key
+
 We can use the ssh key to help we save the time when copying the local file to remote server.
 On your local terminal, run this command 
 
@@ -88,4 +92,20 @@ After that, you are able to log in ieng6 without password.
 
 ## 6. Optimizing Remote Running
 
+When we want to log in and list the home directory on the remote server, we need to
+```
+$ ssh cs15lsp22(the letters in your course-specific account)@ieng6.ucsd.edu
+$ <enter password>
+$ ls
+```
+There is more time saving way, you can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit.
+```
+$ ssh cs15lsp22(the letters in your course-specific account)@ieng6.ucsd.edu "ls"
+```
 
+You also can use this way to complie and run a code
+```
+$ ssh cs15lsp22(the letters in your course-specific account)@ieng6.ucsd.edu "javac Hello.java; java Hello"
+```
+
+![image](optimize.png)
