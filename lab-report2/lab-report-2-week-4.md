@@ -43,13 +43,13 @@ You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-rep
 hshshshshhshshshshshshshshh
 ```
 
-**Symptom:** By using this test file, the result I get is incorrect. 
+**Symptom:** By using this test file, it raise an OutOfMemoryError. Since there is no `[]()` can be find in last two line of the test file, the *currentIndex* will not be update, and our while loop will go infinite times until out of memory.
 
 ![image](error2.png)
 
-<!-- To solve this error, we need to deal with the `!`. Since the only differece between image format and link format is `!`.
+To solve this error, we need to deal with the situtation that has no more `[]()` at the end.
 
-So, I add a if statement to check the character before the `[` whether is `!` or not. If it is `!`, it will not add the address to the *toRetrun*; otherwise, if it is not `!`, it will add the address to the *toRetrun*. -->
+So, I add a if statement to check after every link format `[]()` is there any more `[` after the *currentIndex* (Since the link format is begin with `[`). If there is no `[` after the *currentIndex*, we directly break the while loop and return the *toReturn*; otherwise, continue the while loop to find other link.
 
 Here is the code change for my `MarkdownParse2.java`.
 
