@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
-public class MarkdownParse1 {
+public class MarkdownParse2 {
 
     public static ArrayList<String> getLinks(String markdown) {
         ArrayList<String> toReturn = new ArrayList<>();
@@ -18,6 +18,11 @@ public class MarkdownParse1 {
             int closeParen = markdown.indexOf(")", openParen);
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
+
+            if (markdown.indexOf("[", currentIndex) == -1) {
+                break;
+            }
+            
         }
 
         return toReturn;

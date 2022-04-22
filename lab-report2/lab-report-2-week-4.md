@@ -31,32 +31,33 @@ After I change my `MarkdownParse1.java`, the result I get is correct.
 
 
 ## 2. Error 2
-You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/1557d6dd6053e678865c2efaba30832bdc7d7d9c/lab-report2/test-file1.md)
+You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/c4a32b11d23344a9e96b63751c254031fb33f21f/lab-report2/test-file2.md)
 
 *This is the test file I have now:*
 ```
 # Title
 
 [link1](https://something.com)
-![image](image.png)
 [link2](some-thing.html)
+
+hshshshshhshshshshshshshshh
 ```
 
-**Symptom:** By using this test file, the result I get is incorrect. We want to have only the address of the link, but it also print out the address of the image. Since the image format is `![]()`, it also contain `[]()`.
+**Symptom:** By using this test file, the result I get is incorrect. 
 
-![image](error1.png)
+![image](error2.png)
 
-To solve this error, we need to deal with the `!`. Since the only differece between image format and link format is `!`.
+<!-- To solve this error, we need to deal with the `!`. Since the only differece between image format and link format is `!`.
 
-So, I add a if statement to check the character before the `[` whether is `!` or not. If it is `!`, it will not add the address to the *toRetrun*; otherwise, if it is not `!`, it will add the address to the *toRetrun*.
+So, I add a if statement to check the character before the `[` whether is `!` or not. If it is `!`, it will not add the address to the *toRetrun*; otherwise, if it is not `!`, it will add the address to the *toRetrun*. -->
 
-Here is the code change for my `MarkdownParse1.java`.
+Here is the code change for my `MarkdownParse2.java`.
 
-![image](change_1.png)
+![image](change_2.png)
 
-After I change my `MarkdownParse1.java`, the result I get is correct.
+After I change my `MarkdownParse2.java`, the result I get is correct.
 
-![image](after_change1.png)
+![image](after_change2.png)
 
 
 ## 3. Error 3
