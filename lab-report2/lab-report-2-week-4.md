@@ -61,24 +61,24 @@ After I change my `MarkdownParse2.java`, the result I get is correct.
 
 
 ## 3. Error 3
-You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/c4a32b11d23344a9e96b63751c254031fb33f21f/lab-report2/test-file2.md)
+You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/1263db70ff9ee1e72f0aa47ff89a9e7b5bb52cdc/lab-report2/test-file3.md)
 
 *This is the test file I have now:*
 ```
 # Title
 
 [link1](https://something.com)
-[link3]()
+[link3](    https://some.com    )
 [link2](some-thing.html)
 ```
 
-**Symptom:** By using this test file, it raise an OutOfMemoryError. Since there is no `[]()` can be find in last two line of the test file, the *currentIndex* will not be update, and our while loop will go infinite times until out of memory.
+**Symptom:** By using this test file, the result is incorrect. It contains the space before and after the link. Since it only check the position of `(` and `)`, then add the string between `()`, it may have the extra space.
 
 ![image](error3.png)
 
-<!-- To solve this error, we need to deal with the situtation that has no more `[]()` at the end.
+To solve this error, we need to deal with extra space in the `()`.
 
-So, I add a if statement to check after every link format `[]()` is there any more `[` after the *currentIndex* (Since the link format is begin with `[`). If there is no `[` after the *currentIndex*, we directly break the while loop and return the *toReturn*; otherwise, continue the while loop to find other link. -->
+So, I just use a string method `.trim()` which can remove the whitespace for the string. After using this method when we add the string to *toReturn*, it will not have the extra space.
 
 Here is the code change for my `MarkdownParse3.java`.
 
