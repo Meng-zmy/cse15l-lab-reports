@@ -68,17 +68,17 @@ You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-rep
 # Title
 
 [link1](https://something.com)
-[link3](    https://some.com    )
+[link3](not valid link!)
 [link2](some-thing.html)
 ```
 
-**Symptom:** By using this test file, the result is incorrect. It contains the space before and after the link. Since it only check the position of `(` and `)`, then add the string between `()`, it may have the extra space.
+**Symptom:** By using this test file, the result is incorrect. It contains the non link in the result.
 
 ![image](error3.png)
 
-To solve this error, we need to deal with extra space in the `()`.
+To solve this error, we need to check whether there is space in `()` or not. Since the valid link cannot have the whitespace in it.
 
-So, I just use a string method `.trim()` which can remove the whitespace for the string. After using this method when we add the string to *toReturn*, it will not have the extra space.
+So, I just add a if statement by using string method `.contains(" ")` which can check string have whitespace or not. If it not contains whitespace, it will be add to *toReturn*; otherwise, it will not be added.
 
 Here is the code change for my `MarkdownParse3.java`.
 
@@ -87,3 +87,32 @@ Here is the code change for my `MarkdownParse3.java`.
 After I change my `MarkdownParse3.java`, the result I get is correct.
 
 ![image](after_change3.png)
+
+
+## 4. Error 4
+You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/926ee795218958d97f492ad13ee99df030d9562c/lab-report2/test-file4.md)
+
+*This is the test file I have now:*
+```
+# Title
+
+[link1](https://something.com)
+[link3](    https://some.com    )
+[link2](some-thing.html)
+```
+
+**Symptom:** By using this test file, the result is incorrect. It contains the space before and after the link. Since it only check the position of `(` and `)`, then add the string between `()`, it may have the extra space.
+
+![image](error4.png)
+
+To solve this error, we need to deal with extra space in the `()`.
+
+So, I just use a string method `.trim()` which can remove the whitespace for the string. After using this method when we add the string to *toReturn*, it will not have the extra space.
+
+Here is the code change for my `MarkdownParse3.java`.
+
+![image](change_4.png)
+
+After I change my `MarkdownParse3.java`, the result I get is correct.
+
+![image](after_change4.png)
