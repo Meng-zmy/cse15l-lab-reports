@@ -61,7 +61,7 @@ After I change my `MarkdownParse2.java`, the result I get is correct.
 
 
 ## 3. Error 3
-You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/1263db70ff9ee1e72f0aa47ff89a9e7b5bb52cdc/lab-report2/test-file3.md)
+You can download the test file [here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/a89bee1cf9a2d215a537cd5503ebdbcde3f2fc0a/lab-report2/test-file3.md)
 
 *This is the test file I have now:*
 ```
