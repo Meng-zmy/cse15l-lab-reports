@@ -1,7 +1,6 @@
 # Lab Report 3
 
 ## 1. Streamlining ssh Configuration
-
 The way using `$ ssh cs15lsp22zzz@ieng6.ucsd.edu` log into `ieng6` is lot to type and remember. The easy way to do it is using ssh configuration.
 
 #### a. Create `.ssh/config` file
@@ -39,6 +38,7 @@ Host ieng6
 ![image](1-3.png)
 
 *I just copy a **MyClass.java** to my server account.*
+
 
 ## 2. Setup Github Access from ieng6
 
