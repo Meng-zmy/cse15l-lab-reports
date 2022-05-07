@@ -19,7 +19,7 @@ Host ieng6
 ![image](1-1.png)
 
 
-#### 2. Log `ssh`
+#### d. Log `ssh`
 - Then you can try this command `ssh ieng6`, if you set up correctly, you don't need to enter the password.
 
 ![image](1-2.png)
@@ -33,7 +33,7 @@ Host ieng6
 ```
 
 
-#### 3. `scp` command
+#### c. `scp` command
 - Just use the `scp` command copying a file to your account using just the alias you chose.
 
 ![image](1-3.png)
