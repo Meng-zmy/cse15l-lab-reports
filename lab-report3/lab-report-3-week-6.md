@@ -1,7 +1,6 @@
 # Lab Report 3
 
 ## 1. Streamlining ssh Configuration
-The way using `$ ssh cs15lsp22zzz@ieng6.ucsd.edu` log into `ieng6` is lot to type and remember. The easy way to do it is using ssh configuration.
 
 #### a. Create `.ssh/config` file
 - On your terminal, using `cd .ssh` and `ls` to check is there config on your computer. If it doesn't exist, then create it. 
@@ -60,7 +59,6 @@ Host ieng6
 
 #### c. Resuling commit
 - This is the [link](https://github.com/Meng-zmy/cse15l-lab-reports/commit/a232d38c2fa95b1e083a6bf61678a12636a4cb5a) for successful git push commit.
-
 
 
 ## 3. Copy whole directories with `scp -r`
