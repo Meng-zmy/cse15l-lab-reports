@@ -63,4 +63,28 @@ Host ieng6
 
 ## 3. Copy whole directories with `scp -r`
 
+#### a. Copy whole markdown-parse to ieng6 accunt
+- You can use `scp` to copy the markdown-parse to the remote server.
+```
+scp -r . cs15lsp22(Your own username)@ieng6.ucsd.edu:~/markdown-parse
+```
+![image](3-1.png)
 
+
+#### b. Compile and run tests on ieng6
+- Then you can go to remote server to compile and run test.
+```
+javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java
+java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
+```
+![image](3-2.png)
+
+
+#### c. Do above steps in one line
+- Here is the code I use to copy the markdown-parse to ieng6 account, then compile and run tests on ieng6 by using only one line code:
+```
+scp -r . cs15lsp22ahs@ieng6.ucsd.edu:~/markdown-parser-new; ssh ieng6 "cd markdown-parser-new; javac MarkdownParse.java; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
+```
+
+![image](3-3.png)
+![image](3-4.png)
