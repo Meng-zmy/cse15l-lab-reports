@@ -42,6 +42,25 @@ Host ieng6
 
 ## 2. Setup Github Access from ieng6
 
+#### a. Create the public key and private key
+- You need to create a SSH key on your Github. Here is the SSH key I create on my Github.
+
+![iamge](2-1.png)
+
+- In order to create a SSH key on Github, you need to find the public key on your computer by using `cd ~/.ssh`. The public key is under `id_rsa.pub`, the private key is under `id_rsa`. You can use `cat` to look the keys.
+
+![image](2-2.png)
+
+
+#### b. Running git commands
+- In order to push the change using commands, you need to go to correct directory first. Then using `git add` and `git commit` to commit the change. After that, using `git push` to push the change to the Github.
+
+![image](2-3.png)
+
+
+#### c. Resuling commit
+- This is the [link](https://github.com/Meng-zmy/cse15l-lab-reports/commit/a232d38c2fa95b1e083a6bf61678a12636a4cb5a) for successful git push commit.
+
 
 
 ## 3. Copy whole directories with `scp -r`
