@@ -1,9 +1,10 @@
 # Lab Report 4
 
-*This is the [my MarkdownParse repo](https://github.com/Meng-zmy/markdown-parser-new.git) and this is [reviewed MarkdownParse repo](https://github.com/ima-quack/markdown-parser.git).*
+*Here is the some repos that will be used in this lab report. This is the [my MarkdownParse repo](https://github.com/Meng-zmy/markdown-parser-new.git) and this is [reviewed MarkdownParse repo](https://github.com/ima-quack/markdown-parser.git).*
 
 ## Snippet 1
 
+Here is the raw text for the snippet 1:
 ```
 `[a link`](url.com)
 
@@ -14,7 +15,13 @@
 [`code]`](ucsd.edu)
 ```
 
+The expected output of this snippet should be like:
+![image](snip1.png)
+
+
 ## Snippet 2
+
+Here is the raw text for the snippet 2:
 ```
 [a [nested link](a.com)](b.com)
 
@@ -23,7 +30,13 @@
 [some escaped \[ brackets \]](example.com)
 ```
 
+The expected output of this snippet should be like:
+![image](snip2.png)
+
+
 ## Snippet 3
+
+Here is the raw text for the snippet 3:
 ```
 [this title text is really long and takes up more than 
 one line
@@ -50,3 +63,6 @@ And there's still some more text after that.
 
 And then there's more text
 ```
+
+The expected output of this snippet should be like:
+![image](snip3.png)
