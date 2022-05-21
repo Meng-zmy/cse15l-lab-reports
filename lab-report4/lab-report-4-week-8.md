@@ -16,6 +16,7 @@
 ```
 
 - The expected output of this snippet should be like:
+
 ![image](snip1.png)
 
 
@@ -31,6 +32,7 @@
 ```
 
 - The expected output of this snippet should be like:
+
 ![image](snip2.png)
 
 
@@ -65,4 +67,5 @@ And then there's more text
 ```
 
 - The expected output of this snippet should be like:
+
 ![image](snip3.png)
