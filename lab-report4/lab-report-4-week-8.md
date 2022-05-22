@@ -44,6 +44,15 @@
 
 ![image](snip2.png)
 
+- Here is the test code I use in both my MarkdownParseTest and the reviewed MarkdownParseTest:
+![image](test2.png)
+
+- The test result on my implementation: **Failed**
+![image](myfail2.png)
+
+- The test result on reviewed implementation: **Failed**
+![iamge](otherfail2.png)
+
 
 ## Snippet 3
 
@@ -78,3 +87,12 @@ And then there's more text
 - The expected output of this snippet should be like:
 
 ![image](snip3.png)
+
+- Here is the test code I use in both my MarkdownParseTest and the reviewed MarkdownParseTest:
+![image](test3.png)
+
+- The test result on my implementation: **Failed**
+![image](myfail3.png)
+
+- The test result on reviewed implementation: **Failed**
+![iamge](otherfail3.png)
