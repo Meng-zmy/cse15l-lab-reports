@@ -100,6 +100,8 @@ And then there's more text
 
 - The test result on my implementation: **Failed**
 ![image](myfail3.png)
+For my implementation, since there is many empty space in the snippet3, it does not get anything. For this case it will be difficult to solve. I am not sure it can be solve in small code change.
 
 - The test result on reviewed implementation: **Failed**
 ![iamge](otherfail3.png)
+For reviewed implementation, it get all the things between the `()` and it also includes all the space.
