@@ -5,6 +5,7 @@
 ## Snippet 1
 
 - Here is the raw text for the snippet 1:
+
 ```
 `[a link`](url.com)
 
@@ -32,6 +33,7 @@
 ## Snippet 2
 
 - Here is the raw text for the snippet 2:
+
 ```
 [a [nested link](a.com)](b.com)
 
@@ -57,6 +59,7 @@
 ## Snippet 3
 
 - Here is the raw text for the snippet 3:
+
 ```
 [this title text is really long and takes up more than 
 one line
