@@ -15,9 +15,18 @@
 [`code]`](ucsd.edu)
 ```
 
-- The expected output of this snippet should be like:
+- The expected output of this snippet should be like: 
 
 ![image](snip1.png)
+
+- Here is the test code I use in both my MarkdownParseTest and the reviewed MarkdownParseTest:
+![image](test1.png)
+
+- The test result on my implementation: **Failed**
+![image](myfail1.png)
+
+- The test result on reviewed implementation: **Failed**
+![iamge](otherfail1.png)
 
 
 ## Snippet 2
