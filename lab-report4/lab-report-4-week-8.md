@@ -25,7 +25,7 @@
 
 - The test result on my implementation: **Failed**
 ![image](myfail1.png)
-For my implementation, I do not check the character before the `[`. If I want to pass this test, I can add a if statement to check the character before the `[`, if there is ` ` `, then just do not add this link.
+For my implementation, I do not check the character before the `[`. If I want to pass this test, I can add a if statement to check the character before the `[`, if there is `, then just do not add this link.
 
 - The test result on reviewed implementation: **Failed**
 ![iamge](otherfail1.png)
