@@ -25,9 +25,11 @@
 
 - The test result on my implementation: **Failed**
 ![image](myfail1.png)
+For my implementation, I do not check the character before the `[`. If I want to pass this test, I can add a if statement to check the character before the `[`, if there is ` ` `, then just do not add this link.
 
 - The test result on reviewed implementation: **Failed**
 ![iamge](otherfail1.png)
+For reviewed implementation, since there is `]` after a `]`, it does not go through the `ucsd.edu`. To solving this problem, it can be change to directly check there is `(` after the `]`.
 
 
 ## Snippet 2
