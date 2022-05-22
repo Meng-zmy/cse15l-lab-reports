@@ -53,9 +53,11 @@ For reviewed implementation, since there is `]` after a `]`, it does not go thro
 
 - The test result on my implementation: **Failed**
 ![image](myfail2.png)
+For my implementation, I do not consider the case when there is `[]()`in between the `[]`. So if there is the `[]()` in `[]`, it will cause the index out of range. To solving this case, it will be a little difficult to solve. I think I need to check the the `[]()` in couple, but I do not knew the specific method to implement this.
 
 - The test result on reviewed implementation: **Failed**
 ![iamge](otherfail2.png)
+For reviewed implementation, it only check if there is one `()` in the link, so if it is `(())`, it will only get the `(()`. Maybe it will be useful to have another if statement to check the `)`.
 
 
 ## Snippet 3
