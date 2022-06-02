@@ -19,19 +19,22 @@ public class MarkdownParse {
             if (markdown.indexOf("(", closeBracket) == -1){
                 break;
             }
-            else if (markdown.indexOf("[", closeParen) == -1){
-                toReturn.add(markdown.substring(openParen + 1, closeParen));
-                break;
-            }
+
+            // else if (markdown.indexOf("[", closeParen) == -1){
+            //     toReturn.add(markdown.substring(openParen + 1, closeParen));
+            //     break;
+            // }
+
             if(markdown.substring(openParen + 1, closeParen).contains(" ")){
                 break;
             }
 
-            if (markdown.charAt(openBracket - 1) != '!') {
+            if (markdown.indexOf("[", openParen) == -1) {
+                currentIndex = closeParen + 1;
+            } else if (markdown.charAt(openBracket - 1) != '!') {
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
+                currentIndex = closeParen + 1;
             }
-        
-            currentIndex = closeParen + 1;
         }
 
         return toReturn;
