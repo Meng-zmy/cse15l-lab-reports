@@ -28,7 +28,7 @@
 
 
 ## Test 2: test file `367.md`
-- Here is the link for the test file: [click here]()
+- Here is the link for the test file: [click here](https://github.com/Meng-zmy/cse15l-lab-reports/blob/fd0dd480b79762904fe17c550d6439a1718b8d3e/lab-report5/367.md)
 
 - By looking at the preview of the `367.md`, the expected output should be `[]`.
 ![iamge](367-1.png)
